@@ -1,3 +1,5 @@
+# IMU back ground work
+
 import smbus,time
 
 def MPU6050_start():
