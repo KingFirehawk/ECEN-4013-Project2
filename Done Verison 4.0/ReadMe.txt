@@ -21,4 +21,20 @@ I2C4 = GPIO 7, pin(26), SCL4
 I2C4 = GPIO 6, pin(31), SDA4
 
 The rest of the layout is in the PDF file
-       
+
+-----------------------------------------------------------------------------------------------
+Extra
+
+To find uarts that you can setup run this in the cmd
+sudo dtoverlay -a | grep uart
+
+For the pins of the uarts
+dtoverlay -h uart2
+
+To find other aviavable ports such as the I2C4 used in this project
+raspi-gpio funcs
+
+------------------------------------------------------------------------------------------------
+More Extra 
+
+I2C pins need to be defined when enabling unlike uart becasue for example there are multiple I2C4's 
